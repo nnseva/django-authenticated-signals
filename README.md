@@ -5,9 +5,9 @@
 The Django-Authenticated-Signals package provides several specialized model save and delete signals
 with additional `request` parameter.
 
-The built-in set of Django model signals pre_save, post_save, pre_delete, and post_delete
-don't provide any information about the user who appears to be the running operation initiator, and other
-request context.
+The built-in set of Django model signals `pre_save`, `post_save`, `pre_delete`, and `post_delete`
+don't provide any information about a request context and particularly, the user who appears
+to be the running operation initiator.
 
 The signals provided by the package allow to authenticate model operations for different purposes.
 
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
 Insert the special packet middleware into your middleware pipe:
 
-```
+```python
 MIDDLEWARE = [
     ...
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -57,7 +57,7 @@ MIDDLEWARE = [
 
 Use standard Django way to subscribe to the signal, like:
 
-```
+```python
 from authenticated_signals.signals import *
 
 def q(*av,**kw):
