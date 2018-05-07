@@ -1,5 +1,3 @@
-from .signals import *
-from django.db.models.signals import *
 from django.utils.deprecation import MiddlewareMixin
 
 from threading import local
@@ -20,6 +18,7 @@ class AuthenticatedSignalsMiddleware(MiddlewareMixin):
     @classmethod
     def current_request(cls):
         return getattr(cls.thread_data, 'request', None)
+
 
 def current_request():
     return AuthenticatedSignalsMiddleware.current_request()

@@ -7,9 +7,6 @@ from django.contrib.auth.models import Group
 
 from django.utils.translation import ugettext_lazy as _
 
-from access.plugins import CompoundPlugin, ApplyAblePlugin, CheckAblePlugin, DjangoAccessPlugin
-from access.managers import AccessManager
-
 # Create your models here.
 
 class SomeObject(Model):

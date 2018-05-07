@@ -1,5 +1,4 @@
 from django.db.models.signals import ModelSignal
-from django.conf import settings
 
 authenticated_pre_save = ModelSignal(providing_args=["instance", "raw", "using", "update_fields", "request"], use_caching=True)
 authenticated_post_save = ModelSignal(providing_args=["instance", "raw", "created", "using", "update_fields", "request"], use_caching=True)
