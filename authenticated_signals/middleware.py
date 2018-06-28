@@ -19,6 +19,5 @@ class AuthenticatedSignalsMiddleware(MiddlewareMixin):
     def current_request(cls):
         return getattr(cls.thread_data, 'request', None)
 
-
 def current_request():
     return AuthenticatedSignalsMiddleware.current_request()
