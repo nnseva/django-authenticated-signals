@@ -20,7 +20,7 @@ class SomeObject(Model):
         verbose_name_plural = _("Some Objects")
 
 class SomeChild(Model):
-    parent = models.ForeignKey(SomeObject,verbose_name=_("Parent"), related_name='children')
+    parent = models.ForeignKey(SomeObject,on_delete=models.CASCADE,verbose_name=_("Parent"), related_name='children')
     name = models.CharField(max_length=80,verbose_name=_("Name"))
 
     def __unicode__(self):

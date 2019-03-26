@@ -90,7 +90,7 @@ setup(
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        'django>=1.10,<1.12',
+        'django',
     ],
 
     # List additional groups of dependencies here (e.g. development
