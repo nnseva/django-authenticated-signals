@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nnseva/django-authenticated-signals.svg?branch=master)](https://travis-ci.org/nnseva/django-authenticated-signals)
+[![Build Status](https://app.travis-ci.com/nnseva/django-authenticated-signals.svg?branch=master)](https://app.travis-ci.com/nnseva/django-authenticated-signals.svg?branch=master)
 
 # Django-Authenticated-Signals
 
