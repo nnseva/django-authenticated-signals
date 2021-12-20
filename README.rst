@@ -1,5 +1,5 @@
 Django-Authenticated-Signals
-======================
+============================
 
 The Django-Authenticated-Signals package provides several specialized model save and delete signals
 with additional `request` parameter.
