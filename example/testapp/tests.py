@@ -13,8 +13,6 @@ from django.core.exceptions import ValidationError
 
 import logging
 
-from django.utils.six import text_type, string_types
-
 from authenticated_signals.signals import *
 
 
